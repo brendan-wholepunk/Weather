@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DD04C764-C0C8-4557-B05C-155C1993F6F7">
+    <dependencies>
+        
+        <deployment version="4352" identifier="iOS"/><plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        
+    </dependencies>
+    <scenes>
+        <!--NavigationController-->
+        <scene sceneID="C5C03F7E-6819-4343-B079-3815E2EFF9D5">
+            <objects>
+                <navigationController id="DD04C764-C0C8-4557-B05C-155C1993F6F7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="914BD647-FAC9-4FD0-B635-F40C0FDFF37E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <size key="freeformSize" width="320" height="480"/>
+                    
+                    <connections>
+                        <segue destination="B4EF8B4E-D038-4343-AEC3-E47924736FC4" kind="relationship" relationship="rootViewController" id="60FD68B6-A1B4-4B97-BD58-A30B4A210D40"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6F2FD3C-2D69-41FB-B11A-E55197B3A40E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Screen-->
+        <scene sceneID="D803D631-63A6-4F5E-9322-C4CC33B1C2F4">
+            <objects>
+                <viewController title="View Controller" storyboardIdentifier="Screen" id="B4EF8B4E-D038-4343-AEC3-E47924736FC4" customClass="Screen" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view contentMode="scaleToFill" key="view" id="DC0B1B81-E8CC-4818-9D15-30E77A8569F1">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320.0" height="480.0"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" text="13 ºC" textAlignment="textAlignmentLeft" numberOfLines="0" lineBreakMode="tailTruncation" clipsSubviews="YES" id="90168B8E-A0B0-4F27-B93B-9B28DA6D5304">
+                                <rect key="frame" x="16.0" y="16.0" width="157.5" height="100.0"/>
+                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    
+                                    
+                                    
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="99.6323928833008"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" text="Condition" textAlignment="textAlignmentLeft" numberOfLines="0" lineBreakMode="tailTruncation" clipsSubviews="YES" id="2BF42970-BDCC-4163-A32F-0F949B1A86F0">
+                                <rect key="frame" x="16.0" y="124.0" width="213.5" height="50.0"/>
+                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    
+                                    
+                                    
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="49.5578422546387"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" text="in City, Province" textAlignment="textAlignmentLeft" numberOfLines="0" lineBreakMode="tailTruncation" clipsSubviews="YES" id="60203FCA-7860-4820-8BE2-BCB9D65D3465">
+                                <rect key="frame" x="16.0" y="182.0" width="224.5" height="50.0"/>
+                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    
+                                    
+                                    
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="49.5578422546387"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                
+                            </label>
+                            <imageView translatesAutoresizingMaskIntoConstraints="NO" image="blank" contentMode="scaleAspectFill" clipsSubviews="YES" id="26830D6E-D5E9-442E-8334-36C7F211D8DB">
+                                <rect key="frame" x="237.5" y="124.0" width="52.0" height="52.0"/>
+                                
+                                <constraints>
+                                    <constraint firstItem="26830D6E-D5E9-442E-8334-36C7F211D8DB" firstAttribute="width" priority="998.0" multiplier="1.0" constant="52.0" id="06DFA3F9-C691-497D-AE46-15E866201784"/>
+                                    <constraint firstItem="26830D6E-D5E9-442E-8334-36C7F211D8DB" firstAttribute="height" priority="998.0" multiplier="1.0" constant="52.0" id="EFF41EB6-F2BC-4561-9AFF-FD3D49E78103"/>
+                                    
+                                </constraints>
+                                
+                            </imageView>
+                            <tableView key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" alwaysBounceVertical="YES" dataMode="prototypes" sectionHeaderHeight="28" sectionFooterHeight="28" style="grouped" separatorStyle="none" clipsSubviews="YES" id="B87E0398-8606-483D-82DB-448C57526DB7"><rect key="frame" x="0.0" y="248.0" width="320.0" height="188.0"/>
+                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    
+                                    
+                                    
+                                </constraints>
+                                
+                            </tableView>
+                            <imageView translatesAutoresizingMaskIntoConstraints="NO" image="blank" contentMode="scaleAspectFit" clipsSubviews="YES" id="453277C8-8DBE-4D49-AEE5-7C4170E470CB">
+                                <rect key="frame" x="100.0" y="436.0" width="120.0" height="44.0"/>
+                                
+                                <constraints>
+                                    
+                                    <constraint firstItem="453277C8-8DBE-4D49-AEE5-7C4170E470CB" firstAttribute="height" priority="998.0" multiplier="1.0" constant="44.0" id="D73A3E7E-3F23-4C81-B5AC-DE2EB5382FF2"/>
+                                    
+                                </constraints>
+                                
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.632508516311646" green="0.908239603042603" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="90168B8E-A0B0-4F27-B93B-9B28DA6D5304" firstAttribute="top" secondItem="F06C3D36-12F2-473B-AB00-06F3C820DBAE" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="16.0" id="85A3F222-B5E5-4625-8A8D-8385B9FCF14C"/>
+                            
+                            <constraint firstItem="90168B8E-A0B0-4F27-B93B-9B28DA6D5304" firstAttribute="leading" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="16.0" id="BA0A1233-8F96-4D5A-B172-EF5E4D164FC2"/>
+                            
+                            
+                            
+                            <constraint firstItem="2BF42970-BDCC-4163-A32F-0F949B1A86F0" firstAttribute="top" secondItem="90168B8E-A0B0-4F27-B93B-9B28DA6D5304" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="8.0" id="BC57031E-04B0-4806-9F83-82C9B3394C0A"/>
+                            
+                            <constraint firstItem="2BF42970-BDCC-4163-A32F-0F949B1A86F0" firstAttribute="leading" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="16.0" id="CFE59C4F-8702-45CD-AC8E-05F5F619AB66"/>
+                            
+                            
+                            
+                            <constraint firstItem="60203FCA-7860-4820-8BE2-BCB9D65D3465" firstAttribute="top" secondItem="2BF42970-BDCC-4163-A32F-0F949B1A86F0" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="8.0" id="FFABE3EB-AD5E-47BD-A515-445D822B65BD"/>
+                            
+                            <constraint firstItem="60203FCA-7860-4820-8BE2-BCB9D65D3465" firstAttribute="leading" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="16.0" id="4DA7D76A-3BD2-4BA8-8DD0-930ED1F3099F"/>
+                            
+                            
+                            
+                            <constraint firstItem="26830D6E-D5E9-442E-8334-36C7F211D8DB" firstAttribute="top" secondItem="2BF42970-BDCC-4163-A32F-0F949B1A86F0" secondAttribute="top" priority="1000.0" multiplier="1.0" constant="0.0" id="A7657CE9-4282-4003-9127-47DFF75CCC0F"/>
+                            
+                            <constraint firstItem="26830D6E-D5E9-442E-8334-36C7F211D8DB" firstAttribute="leading" secondItem="2BF42970-BDCC-4163-A32F-0F949B1A86F0" secondAttribute="trailing" priority="1000.0" multiplier="1.0" constant="8.0" id="6264CB27-F931-4B43-97A1-D8C8A0947C40"/>
+                            
+                            
+                            
+                            <constraint firstItem="B87E0398-8606-483D-82DB-448C57526DB7" firstAttribute="top" secondItem="60203FCA-7860-4820-8BE2-BCB9D65D3465" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="16.0" id="B4B28628-4383-445E-9127-67F7D2689873"/>
+                            <constraint firstItem="B87E0398-8606-483D-82DB-448C57526DB7" firstAttribute="bottom" secondItem="453277C8-8DBE-4D49-AEE5-7C4170E470CB" secondAttribute="top" priority="1000.0" multiplier="1.0" constant="0.0" id="54A186B3-CDE6-49B4-B05B-3E74DD8B8F9C"/>
+                            <constraint firstItem="B87E0398-8606-483D-82DB-448C57526DB7" firstAttribute="leading" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="0.0" id="4F0E4864-C979-4579-84F3-A75E54478795"/>
+                            <constraint firstItem="B87E0398-8606-483D-82DB-448C57526DB7" firstAttribute="trailing" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="trailing" priority="1000.0" multiplier="1.0" constant="0.0" id="DF4161F5-7984-478D-833B-FB70FA064C66"/>
+                            
+                            
+                            
+                            <constraint firstItem="453277C8-8DBE-4D49-AEE5-7C4170E470CB" firstAttribute="bottom" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="0.0" id="F1623F97-242D-4914-940A-FBC7CB83315F"/>
+                            <constraint firstItem="453277C8-8DBE-4D49-AEE5-7C4170E470CB" firstAttribute="leading" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="100.0" id="D759FCBB-3B76-47C8-B03F-3E75CD01BB13"/>
+                            <constraint firstItem="453277C8-8DBE-4D49-AEE5-7C4170E470CB" firstAttribute="trailing" secondItem="DC0B1B81-E8CC-4818-9D15-30E77A8569F1" secondAttribute="trailing" priority="1000.0" multiplier="1.0" constant="-100.0" id="26D32F1A-04EB-4B43-8762-EB7B49E69FF2"/>
+                            
+                            
+                            
+                        </constraints>
+                        
+                    </view>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <constraints>
+                    </constraints>
+                    <layoutGuides>
+                    <viewControllerLayoutGuide type="top" id="F06C3D36-12F2-473B-AB00-06F3C820DBAE"/>
+                        </layoutGuides>
+                    <connections>
+                        <outlet property="temperature" destination="90168B8E-A0B0-4F27-B93B-9B28DA6D5304" id="996D7F6C-9EAA-4578-AFBB-09209BCC0C39"/>
+                        <outlet property="condition" destination="2BF42970-BDCC-4163-A32F-0F949B1A86F0" id="F2C28C37-800B-4C93-8F60-092E14DE1DB7"/>
+                        <outlet property="location" destination="60203FCA-7860-4820-8BE2-BCB9D65D3465" id="8B63F9C6-E5BF-44E4-AE96-B954B488A895"/>
+                        <outlet property="conditionImage" destination="26830D6E-D5E9-442E-8334-36C7F211D8DB" id="878AFC96-7064-4867-9412-4AB1BE56A248"/>
+                        <outlet property="tableView" destination="B87E0398-8606-483D-82DB-448C57526DB7" id="0EC37D74-2294-494C-966E-8B7A1F5652A1"/>
+                        <outlet property="logo" destination="453277C8-8DBE-4D49-AEE5-7C4170E470CB" id="E0FF9AA2-D8E3-417E-80DE-1E2CFFA2433E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FD3EDF12-43B1-4687-A275-5683D50CABA4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blank" width="32" height="32"/>
+    </resources>
+</document>
